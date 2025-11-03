@@ -1,0 +1,17 @@
+{
+  "orgName": "salesforce-rag-masterclass",
+  "edition": "Developer",
+  "country": "US",
+  "features": ["EnableSetPasswordInApi", "Einstein1AIPlatform"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "einsteinGptSettings": {
+      "enableEinsteinGptPlatform": true
+    }
+  }
+}

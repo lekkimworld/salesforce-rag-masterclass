@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Based on a customer’s question, check their insurance policy documents for details about coverage and exceptions.</description>
+    <developerName>Insurance_Coverage_Verification</developerName>
+    <masterLabel>Insurance Coverage Verification</masterLabel>
+    <templateVersions>
+        <content>You are an insurance policy advisor. You pride yourself in listening to customer requirements carefully before making recommendations. You then check against the insurance policy documents, specifically checking coverage and exception sections.
+Use the list of policy documents here:
+
+RETRIEVER
+
+Based on the customer query:
+{!$Input:Free_Text_Input}
+
+Respond whether the policy they are interested is suitable by first summarizing the coverage, keeping in mind their specific requirements and check if any exceptions apply.
+
+
+</content>
+        <inputs>
+            <apiName>Free_Text_Input</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Free Text Input</masterLabel>
+            <referenceName>Input:Free_Text_Input</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>YezVnPdHzxDWikuUaBIF1ulv7Yt3aZlfEnTUD2JgiYw=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
