@@ -16,4 +16,12 @@ sf data import bulk -s Insurance_Policy__c -f ./data/insurance_policies.csv  -w 
 4. Map the new DLO to a new custom DMO using standard mappings
 5. Once data has been ingested (18 records) create a new Vector search index using the `Easy Setup` mode
 6. Wait for the search index to be built and indexing to complete
-7. Add the default retriever created for the search index into the `Insurance Coverage Verification` prompt template
+7. Salesforce no longer (as of November 2025) creates a default Retriever. To create one - a REALLY BAD one to form the base of the exercise - one go to Einstein Studio and create a new Individual retriever as follows:
+    1. Select "Data Cloud" for the type,  `default` as the data space, `Insurance_Policy__c_c_Home` for the data model object and `Insurance_Policy__c_c_Home` for the DMO search index. Click Next.
+    2. Select "All Documents" and click Next.
+    3. On the "Configure Retriever Results" page add the following fields (Direct attributes of `Insurance_Policy__c_c_Home`) and then click Next:
+        * `Record ID`
+        * `Data Source`
+        * `Data Source Object`
+    4. Click Save
+8. Add the default retriever created for the search index into the `Insurance Coverage Verification` prompt template
