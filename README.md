@@ -4,7 +4,7 @@ This is the metadata and data for the RAG Masterclass.
 ## Installation Steps
 To prepare for running the exercise in a new org follow the below steps. I've recorded a Youtube video on how to do the setup.
 
-[![Watch the video on how to setup your org](https://raw.githubusercontent.com/lekkimworld/salesforce-rag-masterclass/main/assets/video/thumbnail.png)](https://youtu.be/8I2-nongG5g)
+[![Watch the video on how to setup your org](https://raw.githubusercontent.com/lekkimworld/salesforce-rag-masterclass/main/video/thumbnail.png)](https://youtu.be/8I2-nongG5g)
 
 1. Add metadata and data (add any org into `TARGET_ORG` e.g. `TARGET_ORG="-o myorg"`)
 ```bash
