@@ -24,4 +24,5 @@ sf data import bulk -s Insurance_Policy__c -f ./data/insurance_policies.csv  -w 
         * `Data Source`
         * `Data Source Object`
     4. Click Save
-8. Add the default retriever created for the search index into the `Insurance Coverage Verification` prompt template
+8. Activate the retriever you just created
+9. Add the retriever you created for the search index into the `Insurance Coverage Verification` prompt template where it says `RETRIEVER`. Add the Free Text as the retriever input and return all 3 fields from the retriever.
